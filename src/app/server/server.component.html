@@ -1,0 +1,5 @@
+<!--Directive ngStyle, luego le colocamos corchetes para activar binding-->
+<!--'background-color' es igual a backgroundColor-->
+<p [ngStyle]="{ backgroundColor: getColor() }" [ngClass]="{online: serverStatus === 'online'}"> <!--El primer parametro es la clase y el segundo es la condicion-->
+    {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}
+</p>
